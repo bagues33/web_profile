@@ -374,6 +374,7 @@ img {
   padding: 1rem;
 }
 
+
 footer {
   background-color: rgb(33, 37, 41);
   height: 120px;
@@ -421,7 +422,22 @@ footer {
 .card_content {
   padding: 1rem;
   background: linear-gradient(to bottom left, #6e6d6e 40%, #FFC39E 100%);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
 }
+
+@keyframes example {
+  0%   {background: linear-gradient(to bottom left, #6e6d6e 40%, #FFC39E 100%);}
+  25%  {background: linear-gradient(to bottom left, #262026 40%, #FFC39E 100%);}
+  50%  {background:linear-gradient(to bottom left, #261926 40%, #180f0a 100%);}
+  100% {background: linear-gradient(to bottom left, #03588c 40%, #5264ae 100%);}
+}
+
 
 .card_title {
   color: #ffffff;
